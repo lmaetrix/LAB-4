@@ -9,7 +9,7 @@ package manait_loriemae_circlelab;
  * @author lorie
  */
 class Circle {
-    
+
     private double radius;
 
     // Default constructor with default radius
@@ -28,12 +28,21 @@ class Circle {
 
     public double circumference() {
         return 2 * Math.PI * radius;
-    }   
-    public double arearadii (double radi){
-    return Math.PI * Math.pow(radi, 2);
     }
-    public double circumradii (double radi){
-    return 2 * Math.PI * radi;
+
+    public double diameter() {
+        return 2 * radius;
+    }
+
+    public double arearadii(double radi) {
+        return Math.PI * Math.pow(radi, 2);
+    }
+
+    public double circumradii(double radi) {
+        return 2 * Math.PI * radi;
+    }
+
+    public double diameterradii(double radi) {
+        return 2 * radi;
     }
 }
-
